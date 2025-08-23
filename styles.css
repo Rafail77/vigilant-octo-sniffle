@@ -18,7 +18,7 @@ body {
   margin: 0;                    /* Сбрасываем стандартные внешние отступы браузера */
   background: var(--bg);        /* Применяем светло-серый фон из переменной */
   color: var(--ink);            /* Основной цвет текста */
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif; /* Читаемый, кроссплатформенный шрифт */
+  font-family: "Roboto", system-ui, sans-serif; /* Подключённый Google Fonts */
   line-height: 1.6;             /* Комфортная межстрочная высота по умолчанию */
 }
 
@@ -38,7 +38,7 @@ body {
 .title {
   margin: 0;                    /* Снимаем вертикальные отступы по умолчанию у h1 */
   text-align: center;           /* Центрируем заголовок по ширине контейнера */
-  font-family: Georgia, "Times New Roman", serif; /* Элегантный засечковый шрифт */
+  font-family: "Playfair Display", Georgia, serif; /* Google Fonts */
   font-size: 32px;              /* Размер шрифта заголовка */
   color: var(--accent);         /* Тёмно-красный цвет заголовка */
 }
@@ -121,4 +121,19 @@ body {
   .text-col {
     order: 1;                   /* Текст идёт первым (сверху) */
   }
+}
+
+/* Стили для цитаты */
+.quote {
+  margin-top: 16px;           /* Отступ сверху от картинки */
+  padding: 12px 16px;         /* Внутренний отступ для удобства */
+  background: #fff8f0;        /* Нежный фон (светло-бежевый) */
+  border-left: 4px solid var(--accent); /* Акцентная линия слева */
+  font-style: italic;         /* Курсив — подчёркивает цитатность */
+  font-size: 16px;
+  width: 85%;                      /* Чуть шире стандартного текста (обычно ~60%) */
+  margin: 20px auto;               /* Центрируем по горизонтали */
+  color: var(--muted);
+  border-radius: 8px;         /* Чуть скруглённые углы */
+  box-shadow: var(--shadow);  /* Тень, чтобы выделить блок */
 }
